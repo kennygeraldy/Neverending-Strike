@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sell Your Skin</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+    <body onload="disableSell()">
+        <nav>
+            <a href="../Home/homepage.html" class="logo"><img src="../images/mainLogo.png" alt=""></a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul class="list">
+                <li><a href="../Home/index.html">Homepage</a></li>
+                <li><a href="../Top5Expensive/top5expensive-main.html">Top 5 Expensive</a></li>
+                <li><a href="../Top5Cheapest/top5cheapest-main.html">Top 5 Cheapest</a></li>
+                <li><a href="../Sponsors/sponsors.html">Sponsors</a></li>
+                <li><a href="../SellYourSkin/sellyourskin.html">Sell Your Skin</a></li>
+            </ul>
+         </nav>
+
+        <form class="form-container" id="sellForm">
+            <div class="form-left">
+                <img src="../images/mainLogo-2.png" alt="">
+            </div>
+            <div class="form-right">
+                <h3>Tired of your old skins?</h3>
+                <h3>Come and sell them now!</h3>
+                <br>
+                <div class="wrapper">
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-input">
+                        <label for="category">Weapon Category</label>
+                        <select name="wcategory" id="wcategory" required> 
+                            <option value="">Weapon Category</option>
+                            <option value="pistol">Pistol</option>
+                            <option value="knife">Knife</option>
+                            <option value="rifle">Rifle</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="wrapper">
+                    <div class="form-input">
+                        <label for="sname">Skin's Name</label>
+                        <input type="text" name="sname" id="sname">
+                    </div>
+                    <div class="form-input">
+                        <label for="sprice">Skin's Price</label>
+                        <input type="number" name="sprice" id="sprice">
+                    </div>
+                </div>
+                <br>
+                <label for="valid">
+                    <input type="checkbox" name="valid" id="valid" onchange="sellApprove()" style="vertical-align: middle;"/> I Agree with the terms and conditions.
+                </label>
+                <input type="submit" class="Button" id="Sell" value="Sell">
+            </div>
+
+            <br style="clear:both;"/>
+
+        </form>
+
+         <footer>
+            <div class="sosialMediaLogo">
+                <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt=""></a>
+                <a href="https://twitter.com/home"><img src="../images/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="../images/instagram.png" alt=""></a>
+            </div>
+            <div class="footerMenu">
+                <div class="menu">
+                    <a href="">FAQ</a>
+                </div>
+                <div class="menu">
+                    <a href="">CONTACT</a>
+                </div>
+                <div class="menu">
+                    <a href="">TERMS AND CONDITIONS</a>
+                </div>
+                <div class="menu">
+                    <a href="">SIGN IN</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
